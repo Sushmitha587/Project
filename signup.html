@@ -1,0 +1,19 @@
+<html> 
+    <title>Signup Page </title>
+    <link rel="stylesheet"  href="static/statics.css">
+    <link rel="icon" href="static/favicon.ico">
+    <form action="/" method="POST" enctype="multipart/form-data">
+<head>
+</head>
+<body> 
+    <div class="container">
+        <center><h1>Sign up page </h1></center><br>
+    <center><input type="text" placeholder=" enter username" name="username" required><br><br> 
+    <input type="password" placeholder="enter password"  name="password" minLength="6" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}"required ><br><br>
+    <input type="email" placeholder=" enter email id" name="email" required><br><br>
+    <input type="text" placeholder=" enter phonenumber" name="contect" pattern='\d{10}' required><br></br>
+
+    <button name="btn" value="signupsubmit" required>signup</button>
+    <center>{{msg}}</center>
+</body>
+</html>

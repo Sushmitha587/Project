@@ -1,0 +1,45 @@
+<html>
+<head> 
+    <title>home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" href="static/favicon.ico">
+    <style>
+        body{
+        background-image:url("https://media.istockphoto.com/id/1282730177/photo/human-resource-manager-looking-at-many-different-cv-resume.jpg?s=612x612&w=0&k=20&c=PH-CwjbF-ODtOrlwv1EcdGd3HPV-FfZLHa69eooh7XM=");
+        background-size:100%;
+        }
+        button{
+            height:35px;
+            margin:5px 0px;
+            background-color:skyblue;
+            border:none;
+            border-radius:5px;
+            color: #333;
+        }
+        button:hover{
+            background-color:#333;
+            color:skyblue
+        
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="POST">
+    <nav class="navbar navbar-expand-lg" style="background-color:rgba(42, 157, 165, 0.367)">
+        <div class="container">
+          <a class="navbar-brand"><h1>Online Job Portal</h1> </a>
+          <div class="navbar-nav">
+            <button name="btn" value="homebtn">Home</button>
+            <button style="margin-left:20px;margin-right:20px" name="btn" value="signupbtn">User Admin</button>
+            <button name="btn" value="aboutbtn">About Us</button><br><br>
+        </div>
+    </div>
+    </nav>
+ <!-- span tag is a internal tag where div tag is an external tag-->
+<!-- name shoud be same for all and value must me different-->
+    <center>{{msg}}</center>
+    </form>
+    
+</body>
+</html>
+<!-- www.favicon.ico and click the first link or favicon generator and click on import image and select the image, downlode the favicon image-->
